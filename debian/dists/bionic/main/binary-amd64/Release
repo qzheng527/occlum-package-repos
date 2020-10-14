@@ -1,0 +1,5 @@
+Component: main
+Origin: jessehui.github.io/debian
+Label: jessehui.github.io/debian
+Architecture: amd64
+Description: Occlum repository test
