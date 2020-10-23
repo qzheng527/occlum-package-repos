@@ -1,5 +1,5 @@
-Component: main
-Origin: jessehui.github.io/debian
-Label: jessehui.github.io/debian
+Origin: . bionic
+Label: . bionic
+Archive: bionic
 Architecture: amd64
-Description: Occlum repository test
+Component: main

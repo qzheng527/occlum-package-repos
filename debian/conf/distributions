@@ -1,7 +1,0 @@
-Origin: jessehui.github.io/debian
-Label: jessehui.github.io/debian
-Codename: bionic
-Architectures: amd64
-Components: main
-Description: Occlum repository test
-SignWith: yes
