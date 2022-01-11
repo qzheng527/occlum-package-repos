@@ -1,6 +1,25 @@
 Package: occlum
 Priority: optional
 Section: libs
+Installed-Size: 20206
+Maintainer: Chunyang Hui <sanqian.hcy@antfin.com>
+Architecture: amd64
+Version: 0.26.3-1
+Depends: occlum-sgx-tools (= 0.26.3-1), occlum-pal (= 0.26.3-1), occlum-runtime (= 0.26.3-1), occlum-toolchains-gcc (= 0.15.0-1)
+Filename: pool/main/o/occlum/occlum_0.26.3-1_amd64.deb
+Size: 2911072
+MD5sum: 54f2d45caf98cbf4bfc15daa64af5221
+SHA1: 00f1163cfe96aa9d356a8f28716e7b620a5a7076
+SHA256: ad6d2886a0e5257f77a43edf4ba11241456ffbcee0806c87af000a5eac827161
+SHA512: 55841350ff066419a8d72ecc67bfbf8319b92f294547bfa70f44e374ed56930a887239fa46493955d883f5a8881b40c387102fc56e3c28b5b7f39cd6e4c03ec5
+Description: Occlum is a memory-safe, multi-process library OS (LibOS) for Intel SGX.
+ As a LibOS, it enables legacy applications to run on SGX with little or even no modifications of source code,
+ thus protecting the confidentiality and integrity of user workloads transparently.
+Homepage: https://github.com/occlum/occlum
+
+Package: occlum
+Priority: optional
+Section: libs
 Installed-Size: 19622
 Maintainer: Chunyang Hui <sanqian.hcy@antfin.com>
 Architecture: amd64
@@ -362,22 +381,22 @@ Homepage: https://github.com/occlum/occlum
 Package: occlum-dbgsym
 Priority: optional
 Section: debug
-Installed-Size: 15022
+Installed-Size: 15050
 Maintainer: Chunyang Hui <sanqian.hcy@antfin.com>
 Architecture: amd64
 Source: occlum
-Version: 0.26.2-1
-Depends: occlum (= 0.26.2-1)
-Filename: pool/main/o/occlum/occlum-dbgsym_0.26.2-1_amd64.ddeb
-Size: 9623736
-MD5sum: 7e39ca62cdb52a48e109f9b902f20a8d
-SHA1: 1d143511870269f9f46ee9cf715c1309f0334878
-SHA256: e71e803c84010a59b4b146551a6b99a5b87fa369854ef08265609eb7c84d10fd
-SHA512: de3b1e69188f3ac8275408bb2bb6e4a7ea494012ee26078acd294b57ca31ac22f99d14434b22148d007364f62376bf87db9646861aa70e0bd6e9e7ba35e1f8a1
+Version: 0.26.3-1
+Depends: occlum (= 0.26.3-1)
+Filename: pool/main/o/occlum/occlum-dbgsym_0.26.3-1_amd64.ddeb
+Size: 9467016
+MD5sum: ec63a7110316458f497eff21f1975b44
+SHA1: 506110f3d4570b1e5a8e0d4737f0916853fb8b91
+SHA256: dc50f52ef309ee368106fa354e9647bb0d6f209fa3284a1db282de0681155048
+SHA512: a123876a710199416e8f3e834e08b9b063b1d2dc9e7e58ccb3dd68f468ce80e82204c5b93edaf5471388b9a6ae6b2eeadbb286b2256f755f940f1d05efcf6e6c
 Description: debug symbols for occlum
-Build-Ids: 091e4a19fc2dff339a0a7e08f8dc215ddb7db03f 2d83ebf3cb43896049de4dd61586325812681f37 65a7c15d5490c284f7db4b07dcf07b6a56980ad6 c181a1de0ba81beeddb089d7cdf388ae2cdfc521 c3dfe9317e5a6b6c13ef283ee84ea56d3bebbf13 d9ef4b90646164df21fe91a696e7d298102b46bf dbb6df06631f548af8037876c11017817393cbc1 e54034213b7255644cc8aae8ecc7a8af3ebc4b6e f02838e37945d7a94c53bb8ffdbae8033ee6a9c4 fd4b2e4a7068ea1edc4eb5328abb959b29acf83c
-Auto-Built-Package: debug-symbols
+Build-Ids: 08c2ac26da22d8c479dc6b35106a9660c88f2a04 15aff73916c38105e47d1698de58c323ff1d0b44 2431711eefa9b381e5eecc2a6076e048bee84a87 2435ccaf51219dcd5b4c71ce9232ea3830dcb966 299171e132ae61c3449f3132a7b0f82cdeb0c951 68d6e3f24776450954ce26bf13c851aeea5dafd5 837793d22b49663cb1c03bf81b8342a9c0ae511e 93376a3e84ed2e136125ec2d46c96ba8ec9ee0a1 962155e31bb83f41e75e23a4a2a717390380d0af d769542fcc53d50d2fbb9e7f6db8a414f97963dd
 Package-Type: ddeb
+Auto-Built-Package: debug-symbols
 
 Package: occlum-dbgsym
 Priority: optional
@@ -398,6 +417,24 @@ Description: debug symbols for occlum
 Auto-Built-Package: debug-symbols
 Build-Ids: 22274e2ccdafd0902550ce553aadbac98c9b9a75 3619b6e8bef73f8efaff3a79a5d6e9c83dcae567 7a83d92c17d2852f71751b801e78df0a6ac5b4a2 8654eb76aefd12ce15b7ee460ade719731d1b279 8e5d59d3e59adb5d97f8b742f404251b76b2196c c16deb80eb1b2104fb0cc3983ad6020e813c69cf c316e4ca63f6ba8fc8079fb3a14599fdd821a52a e21325469f6ee2d96fc27bfdaca16ff2598521c2 f6df326cc40ba911e55ca0b0547fec4de8e41fb6 fd98ab5bfabd3b416b81b3cf81869326a8adb910
 Package-Type: ddeb
+
+Package: occlum-pal
+Priority: optional
+Section: libs
+Installed-Size: 216
+Maintainer: Chunyang Hui <sanqian.hcy@antfin.com>
+Architecture: amd64
+Source: occlum
+Version: 0.26.3-1
+Filename: pool/main/o/occlum/occlum-pal_0.26.3-1_amd64.deb
+Size: 59728
+MD5sum: 43a2a18dfb2980ef572b6674491aa09f
+SHA1: 7f8bd5c482a6914a174913517ea41b860e28ef37
+SHA256: 2a15aa35faa57bcc107910d8cdad84d09c1c8f95f425ce8139ec1cf17fecd934
+SHA512: 3b1da100a819fd07d7e4b80e95933e33fe4c9f95be67976d5de61da7b6586df11857a4e776199344dce160494360660ab1753c954b95106724bb8c993ea499f0
+Description: occlum-pal is the Platform Abstraction Layer of Occlum enclave.
+ It provides interfaces to execute trused applications inside enclave.
+Homepage: https://github.com/occlum/occlum
 
 Package: occlum-pal
 Priority: optional
@@ -748,18 +785,18 @@ Installed-Size: 463
 Maintainer: Chunyang Hui <sanqian.hcy@antfin.com>
 Architecture: amd64
 Source: occlum
-Version: 0.26.2-1
-Depends: occlum-pal (= 0.26.2-1)
-Filename: pool/main/o/occlum/occlum-pal-dbgsym_0.26.2-1_amd64.ddeb
+Version: 0.26.3-1
+Depends: occlum-pal (= 0.26.3-1)
+Filename: pool/main/o/occlum/occlum-pal-dbgsym_0.26.3-1_amd64.ddeb
 Size: 407496
-MD5sum: cf260cd6563c7240ce33c0b93a3ae4ae
-SHA1: c43f62d6770d57649d71d5e6cafb1c910c5f4789
-SHA256: f94f85a29b6f056b59599c3ad51bb584f7449c7c2ff359ad9d17c12634149ef5
-SHA512: 58b71598efed36b06771c82cd65c264965e140bc37e87bc93111961dfe4131d1b5bf6d4af06065239ea98473de23c0af9496eee90788c66b22dc46edd4792225
+MD5sum: 24b6346959cb03db1ad8de7261a8ae3e
+SHA1: ef5607bda2776f6306f3b88469855e79f07af100
+SHA256: 9af31e644ac3ab2d06dfcb74b524188bb4627abbedb4413cf5ac6ea806f6cb99
+SHA512: 0c72332546d6610746813ddb2b749056ae135331b933fd7a2ab680652c0d7a7bd20a4239678055788f7f9b105faf6811fb9a6e1cdbfdb97fe9745405ff29a06f
 Description: debug symbols for occlum-pal
-Build-Ids: 37069ede76375bfd00c039b4fb7e96245b61dd21
-Auto-Built-Package: debug-symbols
 Package-Type: ddeb
+Auto-Built-Package: debug-symbols
+Build-Ids: 0d87fa4b019b8a80f5ecbfba05815072d63e273d
 
 Package: occlum-pal-dbgsym
 Priority: optional
@@ -777,9 +814,26 @@ SHA1: 700f410ef988aadd969b0d89fd024738f5c0b867
 SHA256: 66f5fde6a54f4469edcf7661cb31979c0334daa065f862f373e621bbc53d69d6
 SHA512: b365034926e2386e432b7d23976938ec5e6850ed84e04389b2d7a9d15e60ca3b4fc3afe9d9b1b77a24b7dc9de02f8e0b6c43589b162a05460dc9760438891e6a
 Description: debug symbols for occlum-pal
-Package-Type: ddeb
 Auto-Built-Package: debug-symbols
 Build-Ids: 9da211bcf4e60ab1d610be18f86ccf6d45ac5347
+Package-Type: ddeb
+
+Package: occlum-runtime
+Priority: optional
+Section: libs
+Installed-Size: 6462
+Maintainer: Chunyang Hui <sanqian.hcy@antfin.com>
+Architecture: amd64
+Source: occlum
+Version: 0.26.3-1
+Filename: pool/main/o/occlum/occlum-runtime_0.26.3-1_amd64.deb
+Size: 1322692
+MD5sum: 610d8a4fe89a3b7002a8287a9b36b9df
+SHA1: b92870746caae65dd1825e54eb065063583b8992
+SHA256: c3c676345e067a090b15e0c9ef3e1f537bcb097fa7bc4680cea855001c8a73c6
+SHA512: 9e93df91fd2dd9d8ac791dacf5234f4ef3b3c5113bc5a3bfeb883657a650fac9964026690ab59764ac3b4f9bce2ebd12ecb99d07de3f9c4814f0f56174939326
+Description: occlum-runtime contains command for occlum run/exec
+Homepage: https://github.com/occlum/occlum
 
 Package: occlum-runtime
 Priority: optional
@@ -1107,22 +1161,22 @@ Homepage: https://github.com/occlum/occlum
 Package: occlum-runtime-dbgsym
 Priority: optional
 Section: debug
-Installed-Size: 4673
+Installed-Size: 4671
 Maintainer: Chunyang Hui <sanqian.hcy@antfin.com>
 Architecture: amd64
 Source: occlum
-Version: 0.26.2-1
-Depends: occlum-runtime (= 0.26.2-1)
-Filename: pool/main/o/occlum/occlum-runtime-dbgsym_0.26.2-1_amd64.ddeb
-Size: 1780076
-MD5sum: 1d965527052c108fd2075554707e8ce8
-SHA1: 7c078ba5ba16f7271cbe04e8f25900479bdd7884
-SHA256: b8be241778cb3a9885d799b4003a5f835fe62ecc26e7c5f697a11fe205372c42
-SHA512: af4c4737b793e6748ce91f579b5c0bae437dd50101da2f8d1975a6469aeea9961625c6a807e344ec0b7b340a0f6d42641f9ddc598a54f0eea0f58606f8e2aced
+Version: 0.26.3-1
+Depends: occlum-runtime (= 0.26.3-1)
+Filename: pool/main/o/occlum/occlum-runtime-dbgsym_0.26.3-1_amd64.ddeb
+Size: 1779904
+MD5sum: dad933a5d9248640f7e9719feb146a1e
+SHA1: cba21d3967477f9ba56100598b55200ffc7dab4e
+SHA256: d70fb1d4bebf1dfbed7d39dff062592489f2b66d8a4471c644fd587164fc0b9b
+SHA512: f663c317ac8a17259c94475e6311cb5bf17d8f992adb18c71b3832e0ff95fd4a43c620181f371dc54de8e6a5f6e946268add131fc03fb01e6170718964a081ac
 Description: debug symbols for occlum-runtime
-Build-Ids: 3d41bcc5598532a5ab0a49990abfb564bddc8547 76c72374786fb14d3eeb48f38bef8e36413ba052 7dd09364a34f4040bf31d318474e2d60c6cf64d4
 Package-Type: ddeb
 Auto-Built-Package: debug-symbols
+Build-Ids: 43a90dbc8aeff0729b041965457af07e2fadeec0 76c72374786fb14d3eeb48f38bef8e36413ba052 9799f0e4329d2b863f33b6bd77df023f86b4c9ae
 
 Package: occlum-runtime-dbgsym
 Priority: optional
@@ -1140,9 +1194,26 @@ SHA1: 6c4aae77dd50b730ac528fa957502b5210b71c3f
 SHA256: 08a421907280284bcbc7162a30b04eb60b475b000a3fe971f2060adf1d82b2dd
 SHA512: 0d4b7226561598ecf4534ed62ae059a1c045ae0ff484486d0f5fff092e9310ebc9d6306219948023835c82f024a69c4cdf142cfa04e5fd8049a82b4fceb0d299
 Description: debug symbols for occlum-runtime
+Build-Ids: 3dfebccb18e4faf6550391d01988da588d2315d6 606f7817ed673b0fa8ee959b9e8f9edceb62c9a8 e91929833d2947efdb5d68bcfce6ab8fd8d4d150
 Auto-Built-Package: debug-symbols
 Package-Type: ddeb
-Build-Ids: 3dfebccb18e4faf6550391d01988da588d2315d6 606f7817ed673b0fa8ee959b9e8f9edceb62c9a8 e91929833d2947efdb5d68bcfce6ab8fd8d4d150
+
+Package: occlum-sgx-tools
+Priority: optional
+Section: libs
+Installed-Size: 331
+Maintainer: Chunyang Hui <sanqian.hcy@antfin.com>
+Architecture: amd64
+Source: occlum
+Version: 0.26.3-1
+Filename: pool/main/o/occlum/occlum-sgx-tools_0.26.3-1_amd64.deb
+Size: 87388
+MD5sum: 05cf8a4625563061d6e11970b726e8aa
+SHA1: 090ff1f67a28ef9b3f6b81958694988e3d59795e
+SHA256: b6098f3a7c17875373382de22d6328bbe6ef98da4cb02c25a4157555d2e56772
+SHA512: 1368050d1582de8e8af243f267f3452934eb5c899a04b7a5771538296d3dd8497467f0a568be0486fc979d75a842dcfc4e2ffcc42353f8b10b3a43f239e815dc
+Description: Occlum sgx tools used during `occlum build` and `occlum gdb`
+Homepage: https://github.com/occlum/occlum
 
 Package: occlum-sgx-tools
 Priority: optional
@@ -1474,17 +1545,17 @@ Installed-Size: 153
 Maintainer: Chunyang Hui <sanqian.hcy@antfin.com>
 Architecture: amd64
 Source: occlum
-Version: 0.26.2-1
-Depends: occlum-sgx-tools (= 0.26.2-1)
-Filename: pool/main/o/occlum/occlum-sgx-tools-dbgsym_0.26.2-1_amd64.ddeb
+Version: 0.26.3-1
+Depends: occlum-sgx-tools (= 0.26.3-1)
+Filename: pool/main/o/occlum/occlum-sgx-tools-dbgsym_0.26.3-1_amd64.ddeb
 Size: 71956
-MD5sum: 3bf609f4b6725a8b25e03a036e7079e3
-SHA1: baa6cb9600279e1fefc2bf165bc0995afa373f3f
-SHA256: 26478cc532a6205475e6f43431952c75b27d4c37710bd9ce0e5e0cf40e4d3d4d
-SHA512: ffd167731bf9f117963b34aa568c5c3e58a0f1bbe3a741b81ee40bbc6c36894a7350df5e06932e4c73491261f2314c9cb22aa7b06071304b18f600753882f6d0
+MD5sum: 60c36346c4d68167ad19f2377bbbd6be
+SHA1: 4b6920cc6d01405a723846f600884c3da55dcbbd
+SHA256: dfc2744958a06f3eca2b22deaacf7174d2bcd5adb6936153ae81a61baa0da593
+SHA512: 5194776e8479aeaa24e57654d089d0e29db0907930ba0240bc2f5da876d6a849dc8c6afcfc7bcff8c49d94f9291d12670287a09ac5d6c98872b911624a835b97
 Description: debug symbols for occlum-sgx-tools
-Auto-Built-Package: debug-symbols
 Package-Type: ddeb
+Auto-Built-Package: debug-symbols
 Build-Ids: 5c4e2f48e79d077a9a275615465c15952e255668 792270ac355925c972fea609c87123e8bfd605b8 972aebc5bbc833ca070ee68af5e16eaab56017fa aa3331b89190626e2bd80c6ae7eb41e08b647371
 
 Package: occlum-sgx-tools-dbgsym
@@ -1539,7 +1610,7 @@ SHA1: 6d470a16e729f44532446fa4873c14017f919ee7
 SHA256: 9f3ffb4a25bcaa220f27ffd467c879cfa03ee096be9b015e6de4442cee03e82a
 SHA512: 3a8885e2700be0652410fdb5ca0b4810fb1ff1b756c27ac7a2894be446839a29d0a595025906a6415c6a15fed6ba668c45908eb28e2a4fe19a209e6f701090b5
 Description: debug symbols for occlum-toolchains-gcc
-Auto-Built-Package: debug-symbols
 Build-Ids: 01f85c3b640b851a93f2fd8855d903525178545c 078fc3aadc16304f6811293bb2ff2d905d850699 07f6f60c70ba4cb4f10f7dce84e183193bae107e 1df7ccf834b8e73dbb4b35418587be68b7ecaaad 25a6037db802496c7321fe29cafcfcfc662c0fa7 2a63c32a94d43a3c9c8dc8bde138e7f873b94c3b 3116a58595fc221c5a4efe8fa1229e16e9af3803 34dd41d78ad152eed90ecb055d5c6db90e23585e 470592d9d45c598c110879c89a02cdfc5ef86f35 4ad82e24774766f66261b30938d11a7b654eb9c5 51082a4b8dfcb9a877b3651374ec7565a3f4e4d9 5caa2d8302ce535e9738647f412222b5a51354a9 5edaf2b01260a8b3f8e591146113fe6dcd4d0200 5f3e42ebb88bbc232eff4a2f8e0ec0d7cc6a721d 606d807d194866e8396692ee5370b0a2fbb43161 62bad24a95789168081598b1d92736249ec59225 690556687f8e068f3c5d575cd84f306e2f6305b6 793f11e16cbd1254b281b575fac349472e61bddc 835bf18d5a68cbf14661135d9676c0fe468d34fa 88b3d7dd1ae78a2834a66a1f380fbc92cc681b48 9c14a341ba731c79e47261332781f572947378fb a1c744415f5d218ff237fb730e008f6d29a85720 ae7742ea233b0a4b90dd1a35a82e96a923e3e855 b01b5704a42bc7ac0506dad2b468f120aa9eb3ea bab926e7e822745a0308767f9ef674250c0c02d3 c13447f8064ca79ea5a5a011f9ef5ad3f269b5af c61f44ef674f1a1e2115b8a3bc306d32d5bbf0f9 c7ca26fd07c1395b930d8bed887955c69d88dc9a cbbf544ff1d32c58f103b319301f8daad0265e75 d470e06fd6adb1cfd0a1750b821644e2cab44207 d8bcb22889a95b0a75e80b9e43fee25b6df87171 da88176893c9eab782f94d6fe1ee3a5f8cab1217 ea6bcdc20831dbf2a8bddc9bb73b45e8641341bb eb9aacf929afd166d58e1ffbf8ddbea4a2528383 f51a93ec2acd3a2bcb683e58f803b5dcd315baf3
 Package-Type: ddeb
+Auto-Built-Package: debug-symbols
 
