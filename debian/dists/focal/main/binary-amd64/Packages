@@ -7,11 +7,11 @@ Architecture: amd64
 Version: 0.30.1-focal-1
 Depends: occlum-sgx-tools (= 0.30.1-focal-1), occlum-pal (= 0.30.1-focal-1), occlum-runtime (= 0.30.1-focal-1), occlum-toolchains-gcc (= 0.27.0-focal-1)
 Filename: pool/main/o/occlum/occlum_0.30.1-focal-1_amd64.deb
-Size: 4759072
-MD5sum: d6e76a24f57c999ff78544e6335a7e0b
-SHA1: f7d31920f838f52d632c82cee558a9b2b221d297
-SHA256: bc265bd79a725b7da5c03298cbc39e7cbadd92c6bc46677b3505472d17c926e7
-SHA512: 5cd57d7fba14708ea6ebfea0a82c363ebf12df10cc8f777c590d3d3506f6b77f5020a7a75a7d1ef74c240d4d1d0538beb2c915d6336e05219f80d4c8b5a3b691
+Size: 4760564
+MD5sum: b7d0cf98aaa2c85bfb589740afaf21ee
+SHA1: 01a63286a464943e2c22f1082e1fb4501e4ce79f
+SHA256: b0819e48215dcdca0037b7bc493a9930c8ff48e31a62b772886a3c29740bb88e
+SHA512: fd181cdb60243218d35896ef496dbce5b924d941dde46d4d494bd28096de7c6653cc9abc13b6edbd021d8eb8e8f0cc614442b6b5f77c106540c428bf306e1f24
 Description: Occlum is a memory-safe, multi-process library OS (LibOS) for Intel SGX.
  As a LibOS, it enables legacy applications to run on SGX with little or even no modifications of source code,
  thus protecting the confidentiality and integrity of user workloads transparently.
@@ -255,14 +255,14 @@ Source: occlum
 Version: 0.30.1-focal-1
 Depends: occlum (= 0.30.1-focal-1)
 Filename: pool/main/o/occlum/occlum-dbgsym_0.30.1-focal-1_amd64.ddeb
-Size: 18286316
-MD5sum: c0438075d8aa81bc68257d7f4d1b4ab1
-SHA1: 0d2ab387b9f1f8991877019ac7c756c824fb3308
-SHA256: 39a0bacd90e242dd7e4fc51fcdc990c5b0764b84bdfeab9aaaa344228b5d8c3f
-SHA512: 85f1e2d8875b3fd3011e6a0165e8ba1cad66659fff0089e9b79d771e93406e205ce9e392b4b09a50b8f9b7e4ea6f32f9a7554a7bd92338b30f37be27572cc6be
+Size: 18448448
+MD5sum: c57e9ffec9a4563a200fe3092b41afdc
+SHA1: 3ca3fa4d02ea74f42a5216eadca283512352e6cd
+SHA256: 4a1da8cff002f125a3d6437c01377af27b02e237cbebd64ad52163dbcc747f86
+SHA512: 855721818eb7a96fcd0540cca7e11a9ae5d7caf2a0915840da66e0c39efda6b7a4079b87ff57fab74226ed7707f4d162493cfd8d1f5e43bbb8ee33f103523d59
 Description: debug symbols for occlum
 Auto-Built-Package: debug-symbols
-Build-Ids: 0d8f3f2bbc6149eefb4a4edf880cbf330b771208 0f6f3f8d344241b91f824f462b8759cabf1de1ab 1ace4b7bcc9b72b002bdb1958480ee73b207f095 3dfd85ab311646c4537d8d94d5fff58a41d2c295 44f8d428fd06c791cc56030de8465dd5b160b533 56670bb077b915704bf53a26dc93f7c271f8a46e 5aa77e8d87a681a63ad62b437c7c06c540cf1864 65d90a2394e3eb333fc577358ae4f6ab7433dff9 7768c17977e442e8c58c95f90b92bb28fa007b4e 778f08ef3b62f36126362301ec2e10c3e06fcc38 b415f317766d1219ea9a37d7227ccee8ae62b663
+Build-Ids: 0d8f3f2bbc6149eefb4a4edf880cbf330b771208 0f6f3f8d344241b91f824f462b8759cabf1de1ab 1ace4b7bcc9b72b002bdb1958480ee73b207f095 44f8d428fd06c791cc56030de8465dd5b160b533 5355a7c31eac101beaa730516dbdb5927987b8d4 5aa77e8d87a681a63ad62b437c7c06c540cf1864 65d90a2394e3eb333fc577358ae4f6ab7433dff9 7768c17977e442e8c58c95f90b92bb28fa007b4e 778f08ef3b62f36126362301ec2e10c3e06fcc38 b415f317766d1219ea9a37d7227ccee8ae62b663 e777be466095c312ba95b7f6de68a2b736ffc050
 Package-Type: ddeb
 
 Package: occlum-dbgsym
